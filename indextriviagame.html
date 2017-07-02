@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>trivia Game</title>
+    
+	<!--Css files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/Reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">	
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+ <!-- jquary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			 <!-- links for  jquery CDN-->	
+			
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+    
+    
+  </head>
+  <body>
+    
+	<!--Header Section-->
+	<header>
+		<h1 style="font-size:80px ">Trivia Game </br>"Despicable Me"</h1>
+	</header>
+	<!--Content Section-->
+	
+	<!-- create a count down timer that will stop the game when time runs out.  -->
+
+
+
+
+	<form id = "quiz" name = "quiz"	>
+				<p>What are the names of the three orphans that Gru adopts?</p>
+				<input type= "radio" id="mc" name = "question1" value =" Hailey, Kristina, Sam"> Hailey,Kristina,Sam<br>	
+				<input type= "radio" id="mc" name = "question1" value =" Evelyn, Debbie, Heather"> Evelyn,Debbie,Heather<br>	
+				<input type= "radio" id="mc" name = "question1" value =" Margo, Edith, Agnes"> Margo,Edith,Agnes<br>
+				<input type= "radio" id="mc" name = "question1" value =" Miranda, Dana, Elsie"> Miranda,Dana,Elsie<br>
+				<br>
+				<!--  queston 2 -->
+
+				<p> What is the color of Vector's jump suit?</p>
+				<input type= "radio" id="mc" name = "question2" value = " Green"> Green<br>
+				<input type= "radio" id="mc" name = "question2" value = " Yellow"> Yellow<br>
+				<input type= "radio" id="mc" name = "question2" value = " Orange"> Orange<br>	
+				
+				<br>
+
+				<!-- question 3 -->
+				<p> What are Gru and Vector trying to steal?</p>
+				<input type= "radio" id="mc" name = "question3" value =" Statue of Liberty"> The Statue of Liberty<br>
+				<input type= "radio" id="mc" name = "question3" value = " Sun"> The Sun<br>
+				<input type= "radio" id="mc" name = "question3" value = " Moon"> The Moon<br>
+				
+				<br>
+
+				<!-- question 4 -->
+				<p> "Which one of the orphans annoys Vector while selling cookies?</p>
+				<input type= "radio" id="mc" name = "question4" value = "Margo"> Margo<br>
+				<input type= "radio" id="mc" name = "question4" value = "Edith"> Edith <br>
+				<input type= "radio" id="mc" name = "question4" value = "Agnes"> Agnes <br>
+				
+				<br>	
+
+				<!-- question 5 -->
+				<p>Who plays the voice of Gru?</p>
+				<input type= "radio" id="mc" name = "question5" value ="Jason Segel"> Jason Segal<br>	
+				<input type= "radio" id="mc" name = "question5" value ="Steve Carrell">	Steve Carrell<br>
+				<input type= "radio" id="mc" name = "question5" value ="Pharrell Williams">	Pharrell Williams<br>
+				
+				<br>
+
+				<!--  check for response  button -->
+				</br>
+				<input id= "button" type="button" value= "I'm finished" onclick= "check();">	
+
+		
+
+		</form>
+
+			<div id= "after_submit">
+			    <body onload="updateRange();">
+				<p id="message"></p>
+				<p id ="number_correct"></p>
+				<img id="pictures">
+			</div>
+	
+
+	<!--Footer-->
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type='text/javascript' language='javascript' src='assets/js/triviagame.js'></script> 
+    
+	
+    
+  </body>
+</html>
